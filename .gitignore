@@ -1,0 +1,5 @@
+.env
+.conda/*
+wav2vec2*
+data/*
+*.wav

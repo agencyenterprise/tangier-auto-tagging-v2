@@ -1,0 +1,9 @@
+git+https://github.com/speechbrain/speechbrain.git@develop
+modelscope==1.18.1
+yt-dlp
+torch==2.0.1
+torchaudio==2.0.1
+torchvision==0.15.2
+addict==2.4.0
+huggingface
+datasets
