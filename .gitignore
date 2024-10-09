@@ -3,3 +3,4 @@
 wav2vec2*
 data/*
 *.wav
+__pycache__/*

@@ -1,0 +1,13 @@
+transformers
+datasets
+librosa
+einops_exts
+einops
+mmcls
+peft
+ipdb
+torchlibrosa
+tqdm
+pandas
+openmim
+nnaudio
