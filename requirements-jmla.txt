@@ -1,4 +1,3 @@
-transformers
 datasets
 librosa
 einops_exts
@@ -11,3 +10,6 @@ tqdm
 pandas
 openmim
 nnaudio
+python-dotenv
+importlib_metadata
+# transformers
