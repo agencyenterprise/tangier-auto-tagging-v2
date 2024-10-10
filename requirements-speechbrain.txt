@@ -1,7 +1,7 @@
-git+https://github.com/speechbrain/speechbrain.git@develop
-modelscope==1.18.1
+# git+https://github.com/speechbrain/speechbrain.git@develop
+# modelscope==1.18.1
 yt-dlp
-addict==2.4.0
-huggingface
-datasets
-PySoundFile
+# addict==2.4.0
+# huggingface
+# datasets
+# PySoundFile

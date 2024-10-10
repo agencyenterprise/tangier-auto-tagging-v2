@@ -12,4 +12,5 @@ openmim
 nnaudio
 python-dotenv
 importlib_metadata
+torchvision
 # transformers
