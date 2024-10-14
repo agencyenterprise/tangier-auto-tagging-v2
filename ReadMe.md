@@ -1,6 +1,8 @@
 ## Exploration on Autotagging for Genre and Mood
 Jamendo datasets right now have general tags for all included themes and moods in a song. The problem is that sements of a song can have different themes, instruments and genres.
 
+As things stand we only tag a single section of the work and label the entire song.
+
 ### Genre Tagging
 Genre is a loosely defined concept. Some genre's have key features and musicologists can label and name sed features.
 
@@ -29,16 +31,25 @@ in my search I was able to find many datasets and papers, but very few fully wor
 * [Service](https://huggingface.co/case-studies/aws/musixmatch) called musixmatch which could be a potential low cost commercial service that we could use to label our segments.
 
 
+
 ### Spike on feature engineering with librosa
-see feature_engineering.ipynb for more details on that.
+see `feature_engineering.ipynb` for more details on that.
 
-## Installation in runpod
 
+## Runpod experiments
+During the spike several models were explored. Of note were the speechbrain and the jaml models.
+
+### Speechbrain model
+One potential model that was explored was [speechbrain music emotion detection model](https://huggingface.co/speechbrain/emotion-recognition-wav2vec2-IEMOCAP). This one showed a lot of promise but only captured 4 moods: `happy`, `angry`, `neutral`, `sad`
+
+### JMLA Model
+This [model](https://huggingface.co/UniMus/OpenJMLA) read in a 
+These models are best run on 
 Mac
 `brew install sox`
 
 Linux
-
+For the jmla
 ```
 apt update
 apt install python3.9
@@ -49,12 +60,13 @@ pip install -r requirements-jmla.txt
 pip install -U openmim
 mim install mmcv==1.7.1
 apt-get install python3-tk
-
 ```
 
+for the speechbrain model
 ```bash
 sudo apt-get update
 sudo apt-get install sox
+pip install -r requirements-speechbrain.txt
 ```
 
 Conda
