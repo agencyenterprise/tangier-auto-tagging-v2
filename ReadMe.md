@@ -43,8 +43,10 @@ During the spike several models were explored. Of note were the speechbrain and 
 One potential model that was explored was [speechbrain music emotion detection model](https://huggingface.co/speechbrain/emotion-recognition-wav2vec2-IEMOCAP). This one showed a lot of promise but only captured 4 moods: `happy`, `angry`, `neutral`, `sad`
 
 ### JMLA Model
-This [model](https://huggingface.co/UniMus/OpenJMLA) read in a 
-These models are best run on 
+This [model](https://huggingface.co/UniMus/OpenJMLA) read in a song file and then generated a text description including mood, genre, and theme detection. Overall it was pretty weak and did not manage to correctly label even pop songs with simple structure. I ran these models on 10 second snippets from popular music to get a feel for their efficacy.
+
+These models are best run on NVIDIA GPUs in python 3.10 with an older version of torch.
+
 Mac
 `brew install sox`
 
